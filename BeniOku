@@ -1,0 +1,34 @@
+# Şehir Yönetim Sistemi
+
+Bu proje, **Java** dilinde **JFrame** ile geliştirilen bir **Şehir Yönetim Sistemi** uygulamasıdır. Sistem, şehir yöneticileri ve vatandaşların şehirle ilgili bilgilere erişmesini ve yönetmesini sağlar.
+
+## Özellikler
+
+### Kullanıcı Rolleri:
+- **Vatandaş:** 
+  - Trafik raporlarını görüntüleyebilir.
+  - Su seviyelerini takip edebilir.
+  - Enerji raporlarına erişebilir.
+
+- **Şehir Yöneticisi:** 
+  - Araç, bina ve enerji kaynaklarını ekleyebilir/güncelleyebilir.
+  - Trafik sıkışıklığı, enerji uyumsuzlukları gibi sorunları görüntüleyebilir ve çözebilir.
+  - Rapor oluşturabilir ve hizmetleri izleyebilir.
+
+## Proje Yapısı
+
+- `Arayuz.java`: Giriş ekranı, kullanıcı panelleri ve buton işlevleri.
+- `Kullanici.java`: Kullanıcı sınıfı, giriş/çıkış fonksiyonları.
+- `SehirYoneticisi.java`: Yönetici işlemleri (varlık ekleme, güncelleme, rapor oluşturma).
+- `Vatandas.java`: Vatandaş işlemleri (trafik, enerji ve su bilgisi görüntüleme).
+- **Interface Sınıfları:** 
+  - `IBina`, `IEnerjiYonetimi`, `ITrafikYonetimi`, `ISuYonetimi`
+- **Diğer Sınıflar:** 
+  - `EnerjiKaynagi.java`, `Arac.java`
+  
+## Teknik Detaylar
+
+- **Programlama Dili:** Java  
+- **Arayüz:** Swing (JFrame)  
+- **Exception Handling:** Özel hata sınıfları ile sistem hataları yönetilmektedir.
+  
